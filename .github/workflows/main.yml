@@ -23,7 +23,7 @@ jobs:
         run: ./gradlew shadowJar
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: FakeAuctions-JAR
           path: build/libs/FakeAuctions-1.0.0.jar
