@@ -1,0 +1,77 @@
+interval: 10            # minutes between creating fake auctions
+duration: 60            # minutes auction lasts (not guaranteed unless AuctionHouse supports in-command)
+default-count: 1
+
+price-range:
+  min: 50
+  max: 500
+
+# Order to pick categories (ores, armor, tools)
+categories-order:
+  - ores
+  - armor
+  - tools
+
+categories:
+  ores: true
+  armor: true
+  tools: true
+
+ores:
+  - DIAMOND
+  - EMERALD
+  - IRON_INGOT
+  - GOLD_INGOT
+  - LAPIS_LAZULI
+  - REDSTONE
+  - COAL
+
+armor:
+  - LEATHER_HELMET
+  - LEATHER_CHESTPLATE
+  - LEATHER_LEGGINGS
+  - LEATHER_BOOTS
+  - IRON_HELMET
+  - IRON_CHESTPLATE
+  - IRON_LEGGINGS
+  - IRON_BOOTS
+  - DIAMOND_HELMET
+  - DIAMOND_CHESTPLATE
+  - DIAMOND_LEGGINGS
+  - DIAMOND_BOOTS
+  - NETHERITE_HELMET
+  - NETHERITE_CHESTPLATE
+  - NETHERITE_LEGGINGS
+  - NETHERITE_BOOTS
+
+tools:
+  - WOODEN_PICKAXE
+  - WOODEN_AXE
+  - WOODEN_SHOVEL
+  - WOODEN_HOE
+  - STONE_PICKAXE
+  - STONE_AXE
+  - STONE_SHOVEL
+  - STONE_HOE
+  - IRON_PICKAXE
+  - IRON_AXE
+  - IRON_SHOVEL
+  - IRON_HOE
+  - DIAMOND_PICKAXE
+  - DIAMOND_AXE
+  - DIAMOND_SHOVEL
+  - DIAMOND_HOE
+  - NETHERITE_PICKAXE
+  - NETHERITE_AXE
+  - NETHERITE_SHOVEL
+  - NETHERITE_HOE
+
+random-enchants: true
+
+possible-enchants:
+  - DAMAGE_ALL
+  - UNBREAKING
+  - MENDING
+  - EFFICIENCY
+  - PROTECTION_ENVIRONMENTAL
+  - THORNS

@@ -1,0 +1,12 @@
+name: FakeAuctions
+main: com.fakeauctions.FakeAuctions
+version: 1.0.0
+api-version: 1.21
+author: Generated
+depend: [AuctionHouse]
+description: "Creates fake/server auctions for AuctionHouse (best-effort integration)."
+
+commands:
+  fakeauctions:
+    description: Control FakeAuctions (not implemented in this MVP)
+    usage: /<command>

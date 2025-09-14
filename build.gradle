@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'com.fakeauctions'
+version = '1.0.0'
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+}
+
+dependencies {
+    compileOnly 'org.spigotmc:spigot-api:1.21.0-R0.1-SNAPSHOT'
+    // AuctionHouse dependency is runtime-only; plugin will be present on the server.
+}
+
+jar {
+    archiveBaseName.set('FakeAuctions')
+    manifest {
+        attributes 'Implementation-Title': 'FakeAuctions', 'Implementation-Version': version
+    }
+}
+
+shadowJar {
+    archiveClassifier.set('') // produce plain jar name FakeAuctions-1.0.0.jar
+    mergeServiceFiles()
+}
